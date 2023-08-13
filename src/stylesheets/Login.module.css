@@ -13,6 +13,8 @@
 	--bg-color2:#112e42;
 	--text-color:#ededed;
 	--main-color:#00abf0;
+	--main-color2:#00007d;
+	--bg-color3:#121212;
 }
 
 .body{
@@ -62,6 +64,7 @@
 	height: 500px;
 	width: 700px;
 	background: conic-gradient(var(--main-color) 50deg, transparent);
+	box-shadow: inset 0px 0px 0px 20px var(--main-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -12,6 +12,7 @@
 	--bg-color2:#112e42;
 	--text-color:#ededed;
 	--main-color:#00abf0;
+	--bg-color3:#121212;
 }
 .body{
 	display: flex;
@@ -19,7 +20,7 @@
 	align-items: center;
 	min-width: 100%;
 	min-height: 100vh;
-	background: var(--bg-color);
+	background: var(--bg-color3);
 	padding-top: 20px;
 /* 	background-image: url(../images/programacion4.jpg);
 	background-position: center;

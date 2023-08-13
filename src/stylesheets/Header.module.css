@@ -11,14 +11,15 @@
 	--bg-color2:#112e42;
 	--text-color:#ededed;
 	--main-color:#00abf0;
+	--bg-color3:#121212;
 }
 
 
 
 .cabecera{
-	/* background: var(--bg-color); */
-	background: transparent;
-	backdrop-filter: blur(3.125rem);
+	background: var(--bg-color3);
+/* 	background: transparent;
+	backdrop-filter: blur(3.125rem); */
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -62,6 +63,7 @@ a:hover{
 	0px 0px 8px var(--main-color),
 	0px 0px 13px var(--main-color),
 	0px 0px 18px var(--main-color);
+	color: var(--bg-color3);
 }
 a:active{
 	color: var(--main-color);

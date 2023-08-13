@@ -11,10 +11,11 @@
 	--bg-color2:#112e42;
 	--text-color:#ededed;
 	--main-color:#00abf0;
+	--bg-color3:#121212;
 }
 
 .body{
-	background: var(--bg-color);
+	background: var(--bg-color3);
 	min-width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -89,6 +90,7 @@
 	overflow: hidden;
 	transition: .5s;
 	font-size: 1.1em;
+	box-shadow: 2px 2px 2px var(--main-color);
 	/* backdrop-filter: blur(50px); */
 }
 
@@ -114,6 +116,7 @@
 	width: 60%;
 	height: 15em;
 	color: var(--text-color);
+	box-shadow: 2px 2px 2px var(--main-color);
 	/* backdrop-filter: blur(50px); */
 }
 
