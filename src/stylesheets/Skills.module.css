@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+:root{
+	--bg-color:#081b29;
+	--bg-color2:#112e42;
+	--text-color:#ededed;
+	--main-color:#00abf0;
+	--bg-color3:#121212;
+}
+
+.body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	min-width: 100%;
+	min-height: 100vh;
+	background: var(--bg-color3);
+/* 	background-image: url(../images/programacion4.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed; */
+}
+.h1{
+	color: var(--text-color);
+	text-align: center;
+	font-size: 2em;
+	padding-top: 50px;
+}
+
+.section{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 25em;
+}
+.h2{
+	color: var(--text-color);
+	width: 100%;
+	text-align: start;
+	font-size: 1.5em;
+}
+.span{
+	color: var(--text-color);
+	font-size: 1.2em;
+}
+.caja1{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	height: 100%;
+}
+.caja2{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: column;
+	width: 100%;
+	height: 80%;
+	gap: 15px;
+	border: 2px solid var(--main-color);
+	border-radius: 5px;
+	padding-bottom: 15px;
+	/* backdrop-filter: blur(50px); */
+}
+.caja3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	gap: 8px;
+	width: 95%;
+	height: 95%;
+}
+.caja4{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.barra{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 28px;
+	border: 2px solid var(--main-color);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.barra div{
+	width: 0;
+	height: 100%;
+	height: 80%;
+	border-radius: 0px .125rem .125rem 0px;
+	background: linear-gradient( 45deg, var(--bg-color2), var(--main-color));
+}
+
+
+/*=======animation========*/
+
+
+.rellenoHtml{
+	animation: animateHtml 2s forwards;
+}
+@keyframes animateHtml{
+	100%
+	{
+	width:90%;
+	}
+}
+
+.rellenoCss{
+	animation: animateCss 2s forwards;
+}
+
+@keyframes animateCss{
+	100%
+	{
+	width:60%;
+	}
+}
+.rellenoJs{
+	animation: animateJs 2s forwards;
+}
+@keyframes animateJs{
+	100%
+	{
+	width:30%;
+	}
+}
+.rellenoReact{
+	animation: animateReact 2s forwards;
+}
+@keyframes animateReact{
+	100%
+	{
+	width:30%;
+	}
+}
+
+/*========personality============*/
+
+.relleno1{
+	animation: animate1 2s forwards;
+}
+@keyframes animate1{
+	100%
+	{
+	width:40%;
+	}
+}
+
+.relleno2{
+	animation: animate2 2s forwards;
+}
+
+@keyframes animate2{
+	100%
+	{
+	width:90%;
+	}
+}
+.relleno3{
+	animation: animate3 2s forwards;
+}
+@keyframes animate3{
+	100%
+	{
+	width:30%;
+	}
+}
+.relleno4{
+	animation: animate4 2s forwards;
+}
+@keyframes animate4{
+	100%
+	{
+	width:50%;
+	}
+}
+
+
+/*==================================responsive==================================*/
+
+
+@media screen and (max-width:700px) {
+
+
+	.body{
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		gap: 8px;
+		padding-bottom: 20px;
+	}
+
+
+	.section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		width: 100%;
+		height: 100%;
+		gap: 10px;
+	}
+	.h1{
+		font-size: 1.7em;
+	}
+	.h2{
+		font-size: 1.1em;
+	}
+	.caja1{
+		width: 80%;
+		height: 100%;
+		gap: 2px;
+	}
+	.span{
+		font-size: 1em;
+	}
+	.caja2{
+		gap: 8px;
+		padding-bottom: 15px;
+		padding-top: 5px;
+	}
+	.caja3{
+		gap: 2px;
+		width: 85%;
+		height: 100%;
+	}
+	.barra{
+		height: 18px;
+	}
+}
+
+
+@media screen and (min-width:1400px){
+	.body{
+		height: 100vh;
+		gap: 20px;
+	}
+	.section{
+		height: 60%;
+	}
+	.h1{
+		font-size: 2.5em;
+	}
+	.h2{
+		font-size: 2em;
+	}
+	.span{
+		font-size: 1.5em;
+	}
+	.caja2{
+		height: 80%;
+		padding-bottom: 20px;
+	}
+	.barra{
+		height: 30px;
+	}
+} 
+
+
+
