@@ -1,3 +1,15 @@
+:root{ 
+--bg-color3:#121212;
+--text-color:#Eae6ca;
+}
+[d-theme='light']{ 
+  --bg-color3:#Eae6ca;
+  --text-color:#121212;
+  }
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

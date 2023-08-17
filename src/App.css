@@ -5,6 +5,9 @@
 	font-family: 'Poppins', sans-serif;
 	
 }
+body{
+	background: var(--bg-color3);
+}
 
 
 .fade-enter{

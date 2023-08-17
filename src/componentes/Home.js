@@ -5,15 +5,19 @@ import cssilogo from '../images/cssi.svg'
 import jsilogo from '../images/jsi.svg'
 import reactilogo from '../images/reacti.svg'
 /* import yopixel from '../images/yo_pixel.png' */
-import logper from '../images/logopersonal.jpeg'
+/* import logper from '../images/logopersonal.jpeg' */
+import sinfon from '../images/sinfondo4.png'
+
 
 
 
 
 
 function Home(){
+
+
     return(
-        <div className={styles.cuerpo}>
+        <div className={styles.cuerpo} >
 	        <main className={styles.principal}>
 		        <section className={styles.seccion1}>
 			        <h1 className={styles.h1} >Hi, I'm Gaston Quiroga</h1>
@@ -27,15 +31,15 @@ function Home(){
 		        </section>
 		        <section className={styles.seccion2}>
 			        <picture className={styles.picture}>
-				        <img className={styles.img} src={logper} alt="imagenpixel"/>
+				        <img className={styles.img} src={sinfon} alt="imagenpixel"/>
 			        </picture>
 		        </section>
 	        </main>
 	        <div className={styles.pro}>
-		        <img className={styles.sv} src={htmlilogo} alt="logohtml"/>
-		        <img className={styles.sv} src={cssilogo} alt="logocss"/>
-		        <img className={styles.sv} src={jsilogo} alt="logojavascript"/>
-		        <img className={styles.sv} src={reactilogo} alt="logoreact"/>
+		        <img className={styles.sv1} src={htmlilogo} alt="logohtml"/>
+		        <img className={styles.sv2} src={cssilogo} alt="logocss"/>
+		        <img className={styles.sv3} src={jsilogo} alt="logojavascript"/>
+		        <img className={styles.sv4} src={reactilogo} alt="logoreact"/>
 	        </div>
         </div>
     )

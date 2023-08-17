@@ -11,7 +11,7 @@
 :root{
 	--bg-color:#081b29;
 	--bg-color2:#112e42;
-	--text-color:#ededed;
+	--text-color:#Eae6ca;
 	--main-color:#00abf0;
 	--main-color2:#00007d;
 	--bg-color3:#121212;
@@ -37,22 +37,22 @@
 	justify-content: center;
 	align-items: center;
 	
-	height: 350px;
+	height: 21.875rem;
 	width: 100%;
 }
 .form{
 	background:var(--bg-color2);
-	border: 2px solid black;
-	width: 300px;
-	height: 350px;
+	border: .125rem solid black;
+	width: 18.75rem;
+	height: 21.875rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column;
-	gap: 15px;
+	gap: .9375rem;
 	position: relative;
 	overflow: hidden;
-	border-radius: 20px;
+	border-radius: 1.25rem;
 	z-index: 1;
 	
 	
@@ -61,15 +61,15 @@
 .form::before{
 	position: absolute;
 	content: '';
-	height: 500px;
-	width: 700px;
+	height: 31.25rem;
+	width: 43.75rem;
 	background: conic-gradient(var(--main-color) 50deg, transparent);
 	box-shadow: inset 0px 0px 0px 20px var(--main-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	animation:rotar 5s linear infinite;
-	border-radius: 20px;
+	border-radius: 1.25rem;
 	z-index: -1;
 }
 .form::after{
@@ -81,7 +81,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 20px;
+	border-radius: 1.25rem;
 	z-index: -1;
 }
 
@@ -114,7 +114,7 @@
 	align-items: center;
 	flex-flow: column;
 	width: 100%;
-	gap: 10px;
+	gap: .625rem;
 }
 .label{
 	color: var(--text-color);
@@ -161,11 +161,11 @@
 .input{
 	background:var(--bg-color2) ;
 	border: 1px solid var(--main-color);
-	border-radius: 5px;
+	border-radius: .3125rem;
 	position: relative;
 	color: var(--text-color);
 	width: 70%;
-	height: 25px;
+	height: 1.5625rem;
 	z-index: 1;
 }
 /* input::before{
@@ -186,19 +186,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: .625rem;
 }
 .button{
 	border: 1px solid var(--main-color);
 	position: relative;
-	color: whitesmoke;
+	color: var(--text-color);
 	background: var(--bg-color2);
 	width: 5em;
 	height: 3em;
 	overflow: hidden;
 	transition: 2s;
 	z-index: 1;
-	border-radius: 10px;
+	border-radius: .625rem;
 
 }
 
@@ -229,7 +229,7 @@
 }
 .p{
     color: var(--text-color);
-    font-size: 10px;
+    font-size: .625em;
 }
 
 
@@ -241,9 +241,9 @@
 		background: var(--bg-color2);
 	}
 	.form{
-		width: 250px;
-	    height: 290px;
-	    gap: 15px;
+		width: 15.625rem;
+	    height: 18.125rem;
+	    gap: .9375rem;
 	}
 	.button{
 		width: 4.5em;
@@ -252,7 +252,7 @@
 }
 @media screen and (max-width: 800px)  and ( orientation : landscape){
 	.h1{
-		padding-top: 5px;
+		padding-top: .3125rem;
 		font-size: 1.3em;
 	}
 }

@@ -9,7 +9,7 @@
 :root{
 	--bg-color:#081b29;
 	--bg-color2:#112e42;
-	--text-color:#ededed;
+	--text-color:#Eae6ca;
 	--main-color:#00abf0;
 	--bg-color3:#121212;
 }
@@ -30,6 +30,18 @@
 	height: 3.125rem;
 	
 }
+.imglog{
+	height: 2rem;
+	width: 2rem;
+	top: .4em;
+	position: relative;
+}
+/* .spalo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+} */
 .hamburguesa{
 	display: none;
 	cursor: pointer;
@@ -47,9 +59,12 @@
 	justify-content: center;
 	list-style: none;
 	gap: .9375rem;
+	
+	
 }
 .lista li ul{
 	display: none;
+	
 }
 
 a{
@@ -90,7 +105,12 @@ a:active{
 	list-style: none;
 	font-size: .75em;
 	opacity: 1;
+
 	
+	
+}
+.navBar2 ul li a{
+	color: #Eae6ca;
 }
 
 
@@ -100,19 +120,23 @@ a:active{
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid var(--main-color);
-	width: 200px;
+	border: .125rem solid var(--main-color);
+	width: 12.5rem;
 	/* height: 200px; */
-	border-radius: 10px;
+	border-radius: .625rem;
 	background: var(--bg-color2);
-	padding-left: 20px;
+	padding-left: 1.25rem;
 	padding-top: px;
 	opacity: 2;
+	z-index: 100;
+	
+
 }
 /* ===================responsive====================== */
 @media screen and (max-width:800px) /* and (max-height:480px) */ {
 	.cabecera{
 		/* background: transparent; */
+		z-index: 999;
 	}
 
 	
@@ -122,6 +146,7 @@ a:active{
 		padding-right: .9375rem;
 		flex-wrap: wrap;
 		height: 1.875rem;
+		
 	}
 	.lista{
 		display: flex;
@@ -130,20 +155,25 @@ a:active{
 		align-items: center;
 		flex-flow: column nowrap;
 		background: var(--bg-color2);
-		border: 2px solid var(--main-color);
-		border-radius: 10px;
-		opacity: 0;
+		border: .125rem solid var(--main-color);
+		border-radius: .625rem;
+		opacity: -5;
 		height: 0vh;
-		overflow: hidden;
-		transition: all .5s ease;
+		/* overflow: hidden; */
+		transition: all .4s ease;
+		position: relative;	
 		
-		
-		
+	}
+	.lista a{
+		color: #Eae6ca;
 	}
 	.isActive{
 		/* display: flex; */
 		opacity: 1;
 		height: 50vh;
+
+		
+
 	}
 	.hamburguesa{
 		display: flex;
@@ -151,6 +181,7 @@ a:active{
 		height: 1.9em;
 		border: none;
 		background: transparent;
+
 	}
 	.menu{
 		width: 100%;
@@ -158,15 +189,20 @@ a:active{
 		background: var(--bg-color2);
 		color: var(--main-color);
 		background: transparent;
+
+
 	}
 	.menu:active{
 		box-shadow:inset 0 0 15px var(--main-color);
-		border-radius: 5px;
+		border-radius: .3125rem;
+
 	}
 
 }
 @media screen and (max-width: 800px)  and ( orientation : landscape){
 	.isActive{
 		height: 70vh;
+
 	}
+
 }

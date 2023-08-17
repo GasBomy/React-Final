@@ -3,6 +3,8 @@ import styles from '../stylesheets/Header.module.css'
 import { Link } from 'react-router-dom'
 import { TiThMenuOutline } from 'react-icons/ti';
 import { useState } from 'react'
+import imlo from '../images/logo2.png'
+import ChangesThemes from "./ChangeThemes";
 
 function Header(){
 
@@ -17,7 +19,7 @@ function Header(){
         
 	<header className={styles.cabecera}>
         <nav className={styles.navegador}>
-            <span className={styles.span}><Link className={styles.logo} to={'/Home'}>BOMY.CODE</Link></span>
+            <span className={styles.span}><Link className={styles.logo} to={'/Home'}><img src={imlo} className={styles.imglog} alt="logo"/>BOMY.CODE</Link></span>
             <button className={styles.hamburguesa}
             onClick={ toggleMenu }>
                 <TiThMenuOutline className={styles.menu} />
@@ -35,6 +37,7 @@ function Header(){
                     </ul>
                 </li>
                 <li><Link to={'/contact'}>Contact</Link></li>
+                <ChangesThemes/>
             </ul>
         </nav>
     </header>

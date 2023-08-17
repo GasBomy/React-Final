@@ -27,7 +27,7 @@ const handleSubmit =(e)=>{
     return(
         <div className={styles.body}>
 	        <main className={styles.main}>
-		        <h1 className={styles.h1}>Contact Me!</h1>
+		        <h1 className={styles.h1}>Contact <span className={styles.me} >Me!</span></h1>
 		        <form className={styles.form} onSubmit={handleSubmit}>
 			        <div className={styles.caja1}>
 				        <div className={styles.caja2}>

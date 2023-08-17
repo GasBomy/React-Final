@@ -5,7 +5,7 @@ import styles from '../stylesheets/Skills.module.css'
 function Skills(){
     return(
         <div className={styles.body}>
-	        <h1 className={styles.h1}>My Skills</h1>
+	        <h1 className={styles.h1}>My <span className={styles.skills} >Skills</span></h1>
 	        <section className={styles.section}>
 		        <div className={styles.caja1}>
 			        <h2 className={styles.h2}>Coding Skills</h2>

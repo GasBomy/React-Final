@@ -8,6 +8,8 @@ import About from './componentes/About.js';
 import Skills from './componentes/Skills.js';
 import Contact from './componentes/Contact.js';
 import './App.css';
+import ChangesThemes from './componentes/ChangeThemes.js';
+
 
 function App() {
   const [user, setUser] = useState('');
@@ -19,6 +21,7 @@ function App() {
         <Login setUser={setUser} setPass={setPass} />
       ) : (
         <div>
+         
           <Header />
           <Routes>
             <Route index element={ <Home /> } />
