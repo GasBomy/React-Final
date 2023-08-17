@@ -16,14 +16,23 @@ const tsun =()=>{
 
 const DarkMode =()=>{
         document.querySelector('body').setAttribute('d-theme', 'dark')
+        localStorage.setItem('selecterTheme', 'dark')
 }
 const LightMode =()=>{
     document.querySelector('body').setAttribute('d-theme', 'light')
+    localStorage.setItem('selecterTheme', 'light')
+}
+
+const selecterTheme = localStorage.getItem('selecterTheme')
+if (selecterTheme === 'dark'){
+    LightMode()
+} else {
+    DarkMode()
 }
 
 const toggleThemes=(e)=>{
-    if(e.target.checked) LightMode();
-    else DarkMode()
+    if(e.target.checked) DarkMode();
+    else LightMode()
 }
 
 
@@ -33,7 +42,8 @@ return(
     id='activar'
     type='checkbox'
     className={styles.button} 
-    onChange={toggleThemes}/>
+    onChange={toggleThemes}
+    defaultChecked={selecterTheme}/>
     <label htmlFor='activar' className={styles.label} onClick={ tsun } > { sl ? <MdOutlineDarkMode className={styles.sol} /> : <MdSunny className={styles.luna} />}</label>
 </>
 )

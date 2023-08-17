@@ -16,6 +16,12 @@ function Login({ setUser, setPass }) {
     setError(false);
     setUser([username]);
     setPass([password]);
+    
+
+
+    localStorage.setItem('usuario', username)
+    localStorage.setItem('password', password)
+
   };
 
   return (

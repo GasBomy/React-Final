@@ -14,6 +14,13 @@ import sinfon from '../images/sinfondo4.png'
 
 
 function Home(){
+	const u = JSON.stringify(localStorage.getItem( 'usuario'))
+	const p = JSON.stringify(localStorage.getItem( 'password'))
+	const datos = u + p 
+	console.log(datos)
+
+
+	
 
 
     return(

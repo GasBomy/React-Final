@@ -53,6 +53,7 @@ input[type='checkbox']{
 	top: .2rem;
 	right: 0;
 	z-index: 10;
+	cursor: pointer;
 }
 .sol{
 	color: #121212;
@@ -62,4 +63,5 @@ input[type='checkbox']{
 	top: .2rem;
 	right: 0;
 	z-index: 11;
+	cursor: pointer;
 }

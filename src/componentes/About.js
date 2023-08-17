@@ -6,7 +6,9 @@ import { useState } from 'react'
 
 function About(){
 	const [read, setRead] = useState (false)
+	// eslint-disable-next-line
 	const [Texto, setTexto]= useState('Read More')
+	// eslint-disable-next-line
 	const [Texto2, setTexto2]= useState('Read Less')
 
 

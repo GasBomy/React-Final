@@ -199,6 +199,7 @@
 	transition: 2s;
 	z-index: 1;
 	border-radius: .625rem;
+	cursor: pointer;
 
 }
 
