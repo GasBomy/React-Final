@@ -27,7 +27,7 @@ function Login({ setUser, setPass }) {
   const handleReset=()=>{
     setUserName("")
     setPassword("")
-    /* setError(true) */
+    setError(false)
   }
 
   return (

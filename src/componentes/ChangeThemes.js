@@ -26,9 +26,9 @@ const LightMode =()=>{
 const selecterTheme = localStorage.getItem('selecterTheme')
 if (selecterTheme === 'light'){
     LightMode()
-} /* else {
+} else if (selecterTheme === 'dark') {
     DarkMode()
-} */
+}
 
 const toggleThemes=(e)=>{
     if(e.target.checked) LightMode();
