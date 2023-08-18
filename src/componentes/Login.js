@@ -24,6 +24,12 @@ function Login({ setUser, setPass }) {
 
   };
 
+  const handleReset=()=>{
+    setUserName("")
+    setPassword("")
+    /* setError(true) */
+  }
+
   return (
     <div className={styles.body}>
       <h1 className={styles.h1}>BOMY.CODE</h1>
@@ -59,7 +65,8 @@ function Login({ setUser, setPass }) {
             <button className={styles.button} type="submit">
               Login
             </button>
-            <button className={styles.button} type="reset">
+            <button className={styles.button} type="reset"
+            onClick={handleReset}>
               Reset
             </button>
           </div>

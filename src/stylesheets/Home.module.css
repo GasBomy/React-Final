@@ -255,10 +255,11 @@
 @media screen  and (max-width:844px) {
 	.cuerpo{
 		width: 100%;
-		background-image: url(../images/sinfondo4blue.png);
+		background-image: url(../images/logo2.png);
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 70%;
+		background-size: 90%;
+		background-attachment: fixed;
 
 	}
 	.seccion2{

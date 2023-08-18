@@ -20,7 +20,19 @@ const handleSubmit =(e)=>{
 		setError(true)
 		return
 	}
-
+ localStorage.setItem( 'user', username)
+ localStorage.setItem('email', email)
+ localStorage.setItem('phone', movil)
+ localStorage.setItem('subEmail', emailsub)
+ localStorage.setItem('text', asunto )
+}
+const handleReset =()=>{
+	setUsername("");
+	setEmail("");
+	setMovil("");
+	setEmailsub("");
+	setAsunto("");
+	setError(false);
 }
 
 
@@ -61,7 +73,7 @@ const handleSubmit =(e)=>{
 			        </div>
 			        <div>
 				        <button className={styles.button} type="submit">Submit</button>
-				        <button className={styles.button} type="reset">Reset</button>
+				        <button className={styles.button} type="reset" onClick={handleReset}>Reset</button>
 			        </div>
 					{error && <p className={styles.label}> Todos los campos son necesarios</p>}
 		        </form>

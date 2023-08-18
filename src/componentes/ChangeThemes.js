@@ -24,15 +24,15 @@ const LightMode =()=>{
 }
 
 const selecterTheme = localStorage.getItem('selecterTheme')
-if (selecterTheme === 'dark'){
+if (selecterTheme === 'light'){
     LightMode()
-} else {
+} /* else {
     DarkMode()
-}
+} */
 
 const toggleThemes=(e)=>{
-    if(e.target.checked) DarkMode();
-    else LightMode()
+    if(e.target.checked) LightMode();
+    else DarkMode()
 }
 
 
