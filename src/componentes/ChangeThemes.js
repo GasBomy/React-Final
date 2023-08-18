@@ -31,8 +31,8 @@ if (selecterTheme === 'light'){
 }
 
 const toggleThemes=(e)=>{
-    if(e.target.checked) LightMode();
-    else DarkMode()
+    if(e.target.checked) DarkMode();
+    else LightMode()
 }
 
 
