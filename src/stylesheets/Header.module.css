@@ -158,14 +158,17 @@ a:active{
 		border: .125rem solid var(--main-color);
 		border-radius: .625rem;
 		opacity: -5;
-		height: 0vh;
-		/* overflow: hidden; */
+		/* top: 0; */
+		height:0;
+		overflow: hidden;
 		transition: all .4s ease;
 		position: relative;	
 		
 	}
 	.lista a{
 		color: #Eae6ca;
+		/* height: 0;
+		top: 0; */
 	}
 	.isActive{
 		/* display: flex; */
