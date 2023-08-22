@@ -36,7 +36,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+	-webkit-box-reflect:below 0 linear-gradient(transparent,transparent,transparent, rgba(0, 0, 0, 0.6));
 	height: 21.875rem;
 	width: 100%;
 }
@@ -127,6 +127,7 @@
 	align-items: center;
 	animation: luz 3s linear infinite;
 	transition: 4s;
+
 }
 @keyframes luz{
 	0%{
@@ -238,6 +239,9 @@
 
 
 @media screen and (max-width:700px) {
+	.main{
+		-webkit-box-reflect:below -3.9rem linear-gradient(transparent,transparent, rgba(0, 0, 0, 0.6));
+	}
 	.body{
 		/* background: var(--bg-color2); */
 		background-size: 300%;
