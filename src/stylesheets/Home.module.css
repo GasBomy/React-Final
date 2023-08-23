@@ -77,7 +77,8 @@
 .img{
 	width: 85%;
 	height: 20rem;
-	-webkit-box-reflect:below -2.5rem linear-gradient(transparent,transparent,transparent, rgba(0, 0, 0, 0.5));
+	/* -webkit-box-reflect:below -2.5rem linear-gradient(transparent,transparent,transparent, rgba(0, 0, 0, 0.5)); */
+
 
 }
 
